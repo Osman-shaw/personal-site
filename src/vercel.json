@@ -8,17 +8,17 @@
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "build" }
+      "config": { "dist": "build" }
     }
   ],
-  "routes": [
+  "rewrite": [
     {
-      "src": "/api/(.*)",
-      "dest": "api/server.js"
+      "source": "/api/(.*)",
+      "destination": "api/server.js"
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
