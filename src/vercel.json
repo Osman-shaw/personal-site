@@ -11,7 +11,7 @@
       "config": { "dist": "build" }
     }
   ],
-    "rewrites": [
+  "routes": [
     {
       "src": "/api/(.*)",
       "dest": "api/server.js"
