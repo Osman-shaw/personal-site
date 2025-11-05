@@ -8,5 +8,4 @@ export default defineConfig({
     react()
     , tailwindcss() 
   ],
-    base: 'https://Osman-shaw.github.io/personal-site', 
 })
